@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 
 a = np.linspace(0, 20, 50)
-b = np.sin(a)
+b = np.cos(a)
 print(a)
 plt.figure()
 plt.plot(a , b)
