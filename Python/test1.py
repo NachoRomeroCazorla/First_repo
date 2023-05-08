@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-a = np.linspace(0, 4, 50)
+a = np.linspace(0, 10, 50)
 b = np.cos(a)
 print(a)
 plt.figure()
