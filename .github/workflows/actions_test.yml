@@ -1,6 +1,8 @@
 name: run actions_test.py
 
-on: [push]
+on:
+    push:
+      branches: [ main ]
 
 jobs:
   build:
