@@ -15,4 +15,4 @@ jobs:
           python-version: '3.10' # install the python version needed
 
       - name: execute py script # run actions_test.py
-        run: python actions_test.py
+        run: python Python/actions_test.py
