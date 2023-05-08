@@ -16,9 +16,9 @@ jobs:
         with:
           python-version: '3.10' # install the python version needed
 
-      - name: execute py script # run actions_test.py
+      - name: execute python script # run actions_test.py
         run: |
-          python .\Python\actions_test.py
+          python actions_test.py
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
