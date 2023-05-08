@@ -15,16 +15,10 @@ jobs:
           python-version: '3.10' # install the python version needed
 
       - name: execute py script # run actions_test.py
-        run: python Python/actions_test.py
-      
-      - name: commit files
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add -A
-          git diff-index --quiet HEAD || (git commit -a -m "updated files" --allow-empty)
-
-      - name: push changes
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          branch: main 
+          python .\Python\actions_test.py
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "crongenerated"
+          git push
