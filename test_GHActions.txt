@@ -1,1 +1,0 @@
-The github actions has been executed properly :)
